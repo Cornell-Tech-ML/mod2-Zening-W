@@ -1,92 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/YFgwt0yY)
-# MiniTorch Module 2
-
-<img src="https://minitorch.github.io/minitorch.svg" width="50%">
-
-
-* Docs: https://minitorch.github.io/
-
-* Overview: https://minitorch.github.io/module2/module2/
-
-This assignment requires the following files from the previous assignments. You can get these by running
-
-```bash
-python sync_previous_module.py previous-module-dir current-module-dir
-```
-
-The files that will be synced are:
-
-        minitorch/operators.py minitorch/module.py minitorch/autodiff.py minitorch/scalar.py minitorch/scalar_functions.py minitorch/module.py project/run_manual.py project/run_scalar.py project/datasets.py
-
-
-
-Simple:
-<img src="images/simple1.png">
-<img src="images/simple2.png">
-<img src="images/simple3.png">
-number of points: 50
-number of hidden layers: 2
-learning rate: 0.1
-number of epochs: 500
-Epoch: 0/500, loss: 0, correct: 0
-Epoch: 10/500, loss: 37.04466787477349, correct: 24
-Epoch: 20/500, loss: 35.14459019157752, correct: 24
-Epoch: 30/500, loss: 34.687611309836505, correct: 25
-Epoch: 40/500, loss: 34.58507841713337, correct: 26
-Epoch: 50/500, loss: 34.55997740244538, correct: 26
-Epoch: 60/500, loss: 34.5505753609364, correct: 26
-Epoch: 70/500, loss: 34.543969834061365, correct: 26
-Epoch: 80/500, loss: 34.53752223375938, correct: 26
-Epoch: 90/500, loss: 34.52792319981603, correct: 26
-Epoch: 100/500, loss: 34.51312732863864, correct: 26
-Epoch: 110/500, loss: 34.4963566743471, correct: 26
-Epoch: 120/500, loss: 34.47177296595259, correct: 26
-Epoch: 130/500, loss: 34.43753297159141, correct: 26
-Epoch: 140/500, loss: 34.39805355272544, correct: 26
-Epoch: 150/500, loss: 34.35536478380102, correct: 26
-Epoch: 160/500, loss: 34.3069082866675, correct: 26
-Epoch: 170/500, loss: 34.23991170122101, correct: 26
-Epoch: 180/500, loss: 34.13915271497539, correct: 26
-Epoch: 190/500, loss: 34.011946018430976, correct: 26
-Epoch: 200/500, loss: 33.75942873072348, correct: 26
-Epoch: 210/500, loss: 33.3693993331866, correct: 26
-Epoch: 220/500, loss: 32.81715865642421, correct: 36
-Epoch: 230/500, loss: 32.03979098599239, correct: 39
-Epoch: 240/500, loss: 30.944146917433223, correct: 39
-Epoch: 250/500, loss: 29.697042191461687, correct: 41
-Epoch: 260/500, loss: 28.268224307479596, correct: 41
-Epoch: 270/500, loss: 26.556880230635915, correct: 45
-Epoch: 280/500, loss: 24.56933028870782, correct: 45
-Epoch: 290/500, loss: 22.375666060892375, correct: 47
-Epoch: 300/500, loss: 20.07192184312115, correct: 49
-Epoch: 310/500, loss: 17.75654768608744, correct: 50
-Epoch: 320/500, loss: 15.596091200388765, correct: 50
-Epoch: 330/500, loss: 13.658573053419559, correct: 50
-Epoch: 340/500, loss: 12.018727860055156, correct: 50
-Epoch: 350/500, loss: 10.65923689919784, correct: 50
-Epoch: 360/500, loss: 9.547233976677381, correct: 50
-Epoch: 370/500, loss: 8.636493208490133, correct: 50
-Epoch: 380/500, loss: 7.87690751974497, correct: 50
-Epoch: 390/500, loss: 7.237830573598318, correct: 50
-Epoch: 400/500, loss: 6.6947081201604455, correct: 50
-Epoch: 410/500, loss: 6.228818102494084, correct: 50
-Epoch: 420/500, loss: 5.827223354642109, correct: 50
-Epoch: 430/500, loss: 5.481520103756643, correct: 50
-Epoch: 440/500, loss: 5.178966689130644, correct: 50
-Epoch: 450/500, loss: 4.913884793688938, correct: 50
-Epoch: 460/500, loss: 4.677485437226647, correct: 50
-Epoch: 470/500, loss: 4.465321530792759, correct: 50
-Epoch: 480/500, loss: 4.2738888122930945, correct: 50
-Epoch: 490/500, loss: 4.10032298548282, correct: 50
-Epoch: 500/500, loss: 3.9422513563658073, correct: 50
-Diag:
-<img src="images/diag1.png">
-<img src="images/diag2.png">
-<img src="images/diag3.png">
-number of points: 50
-number of hidden layers: 3
-learning rate: 0.1
-number of epochs: 600
+simple:
 Epoch: 0/500, loss: 0, correct: 0
 Epoch: 10/500, loss: 37.04466787477349, correct: 24
 Epoch: 20/500, loss: 35.14459019157752, correct: 24
@@ -139,14 +51,70 @@ Epoch: 480/500, loss: 4.2738888122930945, correct: 50
 Epoch: 490/500, loss: 4.10032298548282, correct: 50
 Epoch: 500/500, loss: 3.9422513563658073, correct: 50
 
-Split:
-<img src="images/split1.png">
-<img src="images/split2.png">
-<img src="images/split3.png">
-number of points: 50
-number of hidden layers: 4
-learning rate: 0.5
-number of epochs: 600
+diag:
+Epoch: 0/600, loss: 0, correct: 0
+Epoch: 10/600, loss: 11.456317773325807, correct: 46
+Epoch: 20/600, loss: 10.72995882850578, correct: 46
+Epoch: 30/600, loss: 10.426032605093233, correct: 46
+Epoch: 40/600, loss: 10.203096746450699, correct: 46
+Epoch: 50/600, loss: 9.989773884780583, correct: 46
+Epoch: 60/600, loss: 9.770015295681997, correct: 46
+Epoch: 70/600, loss: 9.539915477453802, correct: 46
+Epoch: 80/600, loss: 9.298378380652679, correct: 46
+Epoch: 90/600, loss: 9.045054968852646, correct: 46
+Epoch: 100/600, loss: 8.779921122344362, correct: 46
+Epoch: 110/600, loss: 8.522312548397132, correct: 46
+Epoch: 120/600, loss: 8.273675739153225, correct: 46
+Epoch: 130/600, loss: 8.01950730587158, correct: 46
+Epoch: 140/600, loss: 7.760614480597726, correct: 46
+Epoch: 150/600, loss: 7.496033568640131, correct: 46
+Epoch: 160/600, loss: 7.226636738707818, correct: 46
+Epoch: 170/600, loss: 6.954510601667527, correct: 46
+Epoch: 180/600, loss: 6.695571177575774, correct: 46
+Epoch: 190/600, loss: 6.4406591156553485, correct: 46
+Epoch: 200/600, loss: 6.188073126200569, correct: 46
+Epoch: 210/600, loss: 5.938565294465353, correct: 46
+Epoch: 220/600, loss: 5.692564068063838, correct: 46
+Epoch: 230/600, loss: 5.455331884915151, correct: 47
+Epoch: 240/600, loss: 5.252876526696866, correct: 47
+Epoch: 250/600, loss: 5.080262476630731, correct: 47
+Epoch: 260/600, loss: 4.921202310004367, correct: 47
+Epoch: 270/600, loss: 4.765881875470903, correct: 47
+Epoch: 280/600, loss: 4.614255521702427, correct: 47
+Epoch: 290/600, loss: 4.4681192790060305, correct: 47
+Epoch: 300/600, loss: 4.327539538119167, correct: 48
+Epoch: 310/600, loss: 4.191498607941728, correct: 48
+Epoch: 320/600, loss: 4.060345906632187, correct: 48
+Epoch: 330/600, loss: 3.9333599210338246, correct: 49
+Epoch: 340/600, loss: 3.810211260712798, correct: 49
+Epoch: 350/600, loss: 3.701225860861406, correct: 49
+Epoch: 360/600, loss: 3.6080424529771777, correct: 49
+Epoch: 370/600, loss: 3.5213056969933962, correct: 49
+Epoch: 380/600, loss: 3.4396826080345657, correct: 49
+Epoch: 390/600, loss: 3.361005008135041, correct: 49
+Epoch: 400/600, loss: 3.2855933622205233, correct: 49
+Epoch: 410/600, loss: 3.2128808816487395, correct: 49
+Epoch: 420/600, loss: 3.1422222109470117, correct: 49
+Epoch: 430/600, loss: 3.073964358518463, correct: 49
+Epoch: 440/600, loss: 3.0084626260298544, correct: 49
+Epoch: 450/600, loss: 2.9514286072782685, correct: 49
+Epoch: 460/600, loss: 2.8928816166559885, correct: 49
+Epoch: 470/600, loss: 2.8394500820707846, correct: 49
+Epoch: 480/600, loss: 2.7881700470453694, correct: 49
+Epoch: 490/600, loss: 2.7377157828829737, correct: 49
+Epoch: 500/600, loss: 2.6920655530027293, correct: 49
+Epoch: 510/600, loss: 2.6460594602758287, correct: 49
+Epoch: 520/600, loss: 2.600410723927782, correct: 49
+Epoch: 530/600, loss: 2.5576556982381655, correct: 49
+Epoch: 540/600, loss: 2.516352802969024, correct: 49
+Epoch: 550/600, loss: 2.47611727891436, correct: 49
+Epoch: 560/600, loss: 2.437275760537299, correct: 49
+Epoch: 570/600, loss: 2.399385400267757, correct: 49
+Epoch: 580/600, loss: 2.362346576113245, correct: 49
+Epoch: 590/600, loss: 2.3261234202106276, correct: 50
+Epoch: 600/600, loss: 2.2906922819664146, correct: 50
+
+split:
 Epoch: 0/600, loss: 0, correct: 0
 Epoch: 10/600, loss: 33.43380276489284, correct: 29
 Epoch: 20/600, loss: 33.08084585289608, correct: 29
@@ -209,15 +177,7 @@ Epoch: 580/600, loss: 1.181503171468792, correct: 50
 Epoch: 590/600, loss: 1.1330872811261046, correct: 50
 Epoch: 600/600, loss: 1.0838638791949138, correct: 50
 
-
-XOR:
-<img src="images/xor1.png">
-<img src="images/xor2.png">
-<img src="images/xor3.png">
-number of points: 50
-number of hidden layers: 5
-learning rate: 0.5
-number of epochs: 625
+xor:
 Epoch: 0/625, loss: 0, correct: 0
 Epoch: 10/625, loss: 33.29272586804448, correct: 38
 Epoch: 20/625, loss: 31.933702207732644, correct: 36
