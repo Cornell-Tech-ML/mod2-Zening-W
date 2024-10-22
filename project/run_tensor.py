@@ -12,6 +12,7 @@ def RParam(*shape):
     r = 2 * (minitorch.rand(shape) - 0.5)
     return minitorch.Parameter(r)
 
+
 class Network(minitorch.Module):
     def __init__(self, hidden_layers):
         super().__init__()
@@ -43,7 +44,6 @@ class Linear(minitorch.Module):
             self.weights.value.view(1, in_size, self.out_size)
             * x.view(batch, in_size, 1)
         ).sum(1).view(batch, self.out_size) + self.bias.value.view(self.out_size)
-
 
 
 def default_log_fn(epoch, total_loss, correct, losses):
